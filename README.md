@@ -27,7 +27,7 @@ Public Data for a better future https://opengovdata.org
 
 ####  json_encode( $data->allProvinces( true) )
 
-First block of the allProvinces()
+First block of the $data->allProvinces( true)
 
 ```json
 [{
