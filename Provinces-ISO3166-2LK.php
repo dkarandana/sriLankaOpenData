@@ -136,7 +136,7 @@ class Data_API
 	protected static $Provinces = array(
 		array(
 			"code" => "LK-1",
-			"name" => "Western Province",
+			"name" => "Western",
 			"map" => "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Sri_Lanka_Western_Province_locator_map.svg/200px-Sri_Lanka_Western_Province_locator_map.svg.png",
 			"districts" => array(
 				"LK-11",
@@ -146,7 +146,7 @@ class Data_API
 		) ,
 		array(
 			"code" => "LK-2",
-			"name" => "Central Province",
+			"name" => "Central",
 			"map" => "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Sri_Lanka_Central_Province_locator_map.svg/200px-Sri_Lanka_Central_Province_locator_map.svg.png",
 			"districts" => array(
 				"LK-21",
@@ -156,7 +156,7 @@ class Data_API
 		) ,
 		array(
 			"code" => "LK-3",
-			"name" => "Southern Province",
+			"name" => "Southern",
 			"map" => "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Sri_Lanka_Southern_Province_locator_map.svg/200px-Sri_Lanka_Southern_Province_locator_map.svg.png",
 			"districts" => array(
 				"LK-31",
@@ -166,7 +166,7 @@ class Data_API
 		) ,
 		array(
 			"code" => "LK-4",
-			"name" => "Northern Province",
+			"name" => "Northern",
 			"map" => "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Sri_Lanka_Northern_Province_locator_map.svg/200px-Sri_Lanka_Northern_Province_locator_map.svg.png",
 			"districts" => array(
 				"LK-41",
@@ -178,7 +178,7 @@ class Data_API
 		) ,
 		array(
 			"code" => "LK-5",
-			"name" => "Eastern Province",
+			"name" => "Eastern",
 			"map" => "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Sri_Lanka_Eastern_Province_locator_map.svg/200px-Sri_Lanka_Eastern_Province_locator_map.svg.png",
 			"districts" => array(
 				"LK-51",
@@ -206,7 +206,7 @@ class Data_API
 		) ,
 		array(
 			"code" => "LK-8",
-			"name" => "Uva Province",
+			"name" => "Uva",
 			"map" => "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Sri_Lanka_Uva_locator_map.svg/200px-Sri_Lanka_Uva_locator_map.svg.png",
 			"districts" => array(
 				"LK-81",
@@ -215,7 +215,7 @@ class Data_API
 		) ,
 		array(
 			"code" => "LK-9",
-			"name" => "Sabaragamuwa Province",
+			"name" => "Sabaragamuwa",
 			"map" => "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Sri_Lanka_Sabaragamuwa_locator_map.svg/200px-Sri_Lanka_Sabaragamuwa_locator_map.svg.png",
 			"districts" => array(
 				"LK-91",
@@ -246,6 +246,22 @@ class Data_API
 		}
 
 		return $province;
+	}
+
+	public
+
+	function districtFields()
+	{
+
+		return array_keys(self::$Districts[0]);
+	}
+
+	public
+
+	function provinceFields()
+	{
+
+		return array_keys(self::$Provinces[0]);
 	}
 
 	public
@@ -286,7 +302,7 @@ class Data_API
 	}
 }
 
-$data = new Data_API();
+//$data = new Data_API();
 
 // print_r( $data->allDistricts() );
 // print_r( $data->allProvinces() );
