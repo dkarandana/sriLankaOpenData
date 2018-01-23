@@ -1,6 +1,6 @@
 
 # Subdivision names of Sri Lanka 
-## sriLankaOpenData | ISO 3166-2:LK
+#### sriLankaOpenData | ISO 3166-2:LK
 
 Public Data for a better future https://opengovdata.org
 
