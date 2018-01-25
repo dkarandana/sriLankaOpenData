@@ -1,16 +1,8 @@
 {
-    "require-dev": {
-    },
-    "require": {
-        "phpdocumentor/phpdocumentor": "2.*"
-    }
-}
-
-{
     "name": "dkarandana/srilanka-open-data-subdivisions",
     "description": "A short description of what your package does",
     "require": {
         "php": "^5.3.3 || ^7.0",
-        "another-vendor/package": "1.*"
+        "phpdocumentor/phpdocumentor": "2.*"
     }
 }
